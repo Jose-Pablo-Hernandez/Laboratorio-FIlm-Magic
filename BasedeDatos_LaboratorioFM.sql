@@ -15,12 +15,20 @@ create table Empleado
 create table Cliente
 (
   Codigo_Cliente int PRIMARY KEY,
+<<<<<<< HEAD
   DPI_Cliente varchar(11) not null,
   Nombre_Cliente varchar(50) not null,
   Apellido_Cliente varchar(50) not null,
   Telefono_Cliente varchar(10) not null,
   Correo_Cliente varchar(80) not null,
   
+=======
+  Nombre_Cliente varchar(50) not null,
+  Correo_Cliente varchar(80) not null,
+  Telefono_Cliente varchar(10) not null,
+  Numero_Cliente varchar(50) not null,
+ 
+>>>>>>> RamaContenedor
   Codigo_Empleado int,
   foreign key (Codigo_Empleado) references Empleado(Codigo_Empleado)
   ON UPDATE CASCADE
@@ -38,10 +46,19 @@ create table Producto
 (
   Codigo_Producto int PRIMARY KEY,
   Nombre_Producto varchar(50) not null,
+<<<<<<< HEAD
   Precio_Producto FLOAT not null,
   Tipo_Producto varchar(45) not null,
   Existencias_Producto int not null,
   
+=======
+   Cantidad_Producto int,
+     Tipo_Producto varchar(45) not null,
+  Precio_Producto FLOAT not null,
+
+  Estado_Producto varchar(10),
+ 
+>>>>>>> RamaContenedor
   Codigo_Autor int,
   foreign key(Codigo_Autor) references Autor(Codigo_Autor)
    ON UPDATE CASCADE
