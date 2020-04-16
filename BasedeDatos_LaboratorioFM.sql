@@ -28,7 +28,7 @@ create table Cliente
 
 create table Autor
 (
-  Codigo_Autor int PRIMARY KEY,
+  Codigo_Autorg int PRIMARY KEY,
   Nombre_Autor varchar(50) not null,
   Apellido_Autor varchar(50) not null,
    Ciudad_Autor varchar(50) not null
