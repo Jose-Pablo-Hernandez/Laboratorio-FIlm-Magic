@@ -1,17 +1,15 @@
-drop database filmmagic;
+drop database Filmmagic;
 create database FilmMagic;
 use FilmMagic;
 
 create table Empleado
 (
   Codigo_Empleado int PRIMARY KEY,
-  DPI_Empleado varchar(11) not null,
   Nombre_Empleado varchar(50) not null,
   Apellido_Empleado varchar(50) not null,
+  DPI_Empleado varchar(11) not null,
   Telefono_Empleado varchar(10) not null,
-  Correo_Empleado varchar(80) not null,
-  Genero_Empleado varchar(1) not null,
-  Estado_Empleado varchar(1) not null
+  Correo_Empleado varchar(80) not null
 )Engine= InnoDB, default char set= latin1;
 
 create table Cliente
